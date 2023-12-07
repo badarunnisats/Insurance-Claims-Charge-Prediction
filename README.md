@@ -5,11 +5,11 @@ This project aims to predict insurance charges based on various factors using ma
 
 ## Project Structure
 
-1.**Data Collection:**
-  -The dataset is obtained from source link using the wget command.
-  -The data is read into a Pandas DataFrame for further analysis.
+**1.Data Collection:**
+  - The dataset is obtained from source link using the wget command.
+  - The data is read into a Pandas DataFrame for further analysis.
   
-   ...python
+   '''python
    #Downloading the data from the provided URL and reading it into a DataFrame
    !wget https://raw.githubusercontent.com/alexjolly28/entri_DSML/main/resources/insurance.csv
    df = pd.read_csv("insurance.csv")
@@ -17,8 +17,8 @@ This project aims to predict insurance charges based on various factors using ma
 
 **2.Exploratory Data Analysis (EDA):**
 
-Basic libraries such as NumPy, Pandas, Matplotlib, and Seaborn are imported.
-Descriptive statistics, null checks, and visualizations are performed to understand the data.
+   - Basic libraries such as NumPy, Pandas, Matplotlib, and Seaborn are imported.
+   - Descriptive statistics, null checks, and visualizations are performed to understand the data.
 import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
