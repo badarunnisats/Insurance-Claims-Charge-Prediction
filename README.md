@@ -9,11 +9,11 @@ This project aims to predict insurance charges based on various factors using ma
   - The dataset is obtained from source link using the wget command.
   - The data is read into a Pandas DataFrame for further analysis.
   
-   '''python
+   ```python
    #Downloading the data from the provided URL and reading it into a DataFrame
    !wget https://raw.githubusercontent.com/alexjolly28/entri_DSML/main/resources/insurance.csv
    df = pd.read_csv("insurance.csv")
-   ...
+   ```
 
 **2.Exploratory Data Analysis (EDA):**
 
