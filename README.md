@@ -97,5 +97,4 @@ for model_name, model in models:
 **6. Conclusion:**
 
 - The model with the lowest average Mean Squared Error (MSE) can be considered the best model for predicting insurance charges.
-- The model with the lowest average Mean Squared Error (MSE) can be considered the best model for predicting insurance charges.
 
