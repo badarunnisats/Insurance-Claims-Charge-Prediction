@@ -11,6 +11,8 @@ The data is read into a Pandas DataFrame for further analysis.
 #Downloading the data from the provided URL and reading it into a DataFrame
 !wget https://raw.githubusercontent.com/alexjolly28/entri_DSML/main/resources/insurance.csv
 df = pd.read_csv("insurance.csv")
+
+
 **2.Exploratory Data Analysis (EDA):**
 
 Basic libraries such as NumPy, Pandas, Matplotlib, and Seaborn are imported.
@@ -32,6 +34,8 @@ plt.title('Age vs Insurance Charges')
 plt.xlabel('Age')
 plt.ylabel('Insurance Charges')
 plt.show()
+
+
 **3.Data Preprocessing:**
 
 Label encoding is applied to categorical variables (e.g., sex, smoker, region) to convert them into numerical format.
@@ -44,11 +48,15 @@ df['region_encoded'] = label_encoder.fit_transform(df['region'])
 Unnecessary columns are removed.
 unnecessary_columns = ['sex', 'smoker', 'region']
 df = df.drop(columns=unnecessary_columns)
+
+
 **4.Feature Selection:**
 
 Independent (features) and dependent (target) variables are selected.
 X = df[['age', 'sex_encoded', 'bmi', 'children', 'smoker_encoded', 'region_encoded']]
 y = df['charges']
+
+
 **5.Modeling:**
 
 Various regression models are explored, including Linear Regression, Decision Tree, Random Forest, and Support Vector Machine (SVR).
@@ -74,10 +82,10 @@ for model_name, model in models:
     cv_scores = cross_val_score(model, X, y, cv=5, scoring='neg_mean_squared_error')
     avg_mse = -cv_scores.mean()
     print(f"{model_name} - Average MSE: {avg_mse}")
+
+    
 **6.Conclusion:**
 
 The model with the lowest average Mean Squared Error (MSE) can be considered the best model for predicting insurance charges.
-
-
 The model with the lowest average Mean Squared Error (MSE) can be considered the best model for predicting insurance charges.
 
