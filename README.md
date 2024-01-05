@@ -1,4 +1,8 @@
 # Insurance Claims Charge Prediction
+
+![Insurance-Claims_EN](https://github.com/badarunnisats/Insurance-Claims-Charge-Prediction/assets/109198401/9f90e7b4-1037-44db-ac40-1fe79528b6da)
+
+
 This project aims to predict insurance charges based on various factors using machine learning models. The dataset used contains information such as age, sex, BMI, number of children, smoking status, region, and insurance charges. The goal is to explore the data, perform data preprocessing, and build regression models to predict insurance charges.
 # Overview
 This project aims to predict insurance charges based on various factors using machine learning models. The dataset used contains information such as age, sex, BMI, number of children, smoking status, region, and insurance charges. The goal is to explore the data, perform data preprocessing, and build regression models to predict insurance charges.
