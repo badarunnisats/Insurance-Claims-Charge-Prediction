@@ -102,3 +102,12 @@ for model_name, model in models:
 
 - The model with the lowest average Mean Squared Error (MSE) can be considered the best model for predicting insurance charges.
 
+  ```python
+  best_mse = results_df['MSE'].idxmin()
+best_rmse = results_df['RMSE'].idxmin()
+best_r2 = results_df['R-squared'].idxmax()
+best_model = results_df.loc[[best_mse, best_rmse, best_r2]].iloc[0]
+print("\nBest performing models based on metrics:")
+print(best_model)
+```
+
